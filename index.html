@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Monoton&family=Montserrat:wght@300&family=Nabla&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="headBar">
+      <a href="index.html"><h2>myTicTacToe</h2></a>
+      <div class="options">
+        <a href="single.html"><p>single</p></a>
+        <a href="mutli.html"><p>duel</p></a>
+      </div>
+    </div>
+    <div class="opt single">
+      <a href="single.html"><h1>SINGLE PLAYER</h1></a>
+    </div>
+    <div class="opt multi">
+      <a href="mutli.html"><h1>TWO PLAYERS</h1></a>
+    </div>
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❄</div>
+    </div>
+    <div class="cc">
+      <p>&#169; Avneet Singh</p>
+    </div>
+    <script>
+      let element = document.getElementsByClassName("single")[0];
+      element.addEventListener("mouseover", function () {
+        element.classList.add("hovered");
+        setTimeout(function(){
+          element.classList.remove("hovered");
+        },1000)
+      });
+      element.addEventListener("click", function () {
+        window.location = "single.html"
+      });
+
+      let element2 = document.getElementsByClassName("multi")[0];
+      element2.addEventListener("mouseover", function () {
+        element2.classList.add("hovered");
+        setTimeout(function(){
+          element2.classList.remove("hovered");
+        },1000)
+      });
+      element2.addEventListener("click", function () {
+        window.location = "single.html"
+      });
+      // document.addEventListener("mouseover", function () {
+      //   let arr = document.getElementsByClassName("opt");
+      //   for (let i = 0; i < arr.length; i++) {
+      //     arr[i].classList.remove("hovered");
+      //   }
+      // });
+    </script>
+  </body>
+</html>

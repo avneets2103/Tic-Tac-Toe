@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game for two</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="single.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Monoton&family=Nabla&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="headBar">
+            <a href="index.html"><h2 >myTicTacToe</h2></a>
+        </div> 
+    </nav>   
+    <div class="mainBox row">
+        <div class="gameArea col-12 col-lg-6">
+            <div class="container row">
+                <div class="box a col-4"><span class="boxText" id="0">&#160;</span></div>
+                <div class="box b col-4"><span class="boxText" id="1">&#160;</span></div>
+                <div class="box c col-4"><span class="boxText" id="2">&#160;</span></div>
+                <div class="box d col-4"><span class="boxText" id="3">&#160;</span></div>
+                <div class="box e col-4"><span class="boxText" id="4">&#160;</span></div>
+                <div class="box f col-4"><span class="boxText" id="5">&#160;</span></div>
+                <div class="box g col-4"><span class="boxText" id="6">&#160;</span></div>
+                <div class="box h col-4"><span class="boxText" id="7">&#160;</span></div>
+                <div class="box i col-4"><span class="boxText" id="8">&#160;</span></div>
+            </div>
+        </div>
+        <div class="controlArea col-12 col-lg-6">
+            <h1 id="gameStatus">Welcome to TicTacToe</h1>
+            <p><span id="turn">Turn for X</span>
+            <button><a href="mutli.html" class="linkBack">Reset</a></button></p>
+            <br>
+            <img src="excited.gif" alt="happy" width="20%" class="gif" id="excited">
+            <div style="width:50%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/ROvT19V4hygmI" width="100%" height="100%" style="position:absolute" frameBorder="0" id="gify" class="tie" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/smile-batman-dc-ROvT19V4hygmI"></a></p>
+        </div>
+        <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❆</div>
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❆</div>
+            <div class="snowflake">❄</div>
+            <div class="snowflake">❅</div>
+            <div class="snowflake">❆</div>
+            <div class="snowflake">❄</div>
+          </div>
+    </div>
+    <div class="cc">
+        <p>&#169; Avneet Singh</p>
+    </div>
+    <!-- script file -->
+    <script src="multi.js"></script>
+</body>
+</html>
