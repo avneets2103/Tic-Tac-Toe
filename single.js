@@ -13,6 +13,11 @@ function filling(){
     }    
 }
 
+gameStatus.addEventListener('click',function()
+{
+    alert("BS kr");
+})
+
 //winner
 function wins(i){
     if(i==1){
